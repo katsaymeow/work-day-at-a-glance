@@ -32,23 +32,24 @@ function eachHour(){//sets moment so that hours are the increment.
 
   $(".time-line").each(function(){// parseInt to attribute
       var hourLine = parseInt($(this).attr("id").split("hour")[1]);
+      console.log(hourLine, currentHour)
+
       if(hourLine < currentHour){
           $(this).addClass("past");
-          $(this).removeClass("now");
-          $(this).removeClass("soon");
+          $(this).removeClass("future");
+          $(this).removeClass("present");
       }//if else to handle adding classes for css event
       else if(hourLine === currentHour) {
           $(this).removeClass("past");
-          $(this).addClass("now");
-          $(this).removeClass("soon");
+          $(this).addClass("present");
+          $(this).removeClass("future");
       }
       else {
+          $(this).removeClass("present");
           $(this).removeClass("past");
-          $(this).removeClass("now");
-          $(this).addClass("soon");
+          $(this).addClass("future");
+          console.log(this)
       }
-      console.log(this);
-      console.log(hourLine, currentHour)
   })
 }
       eachHour();
