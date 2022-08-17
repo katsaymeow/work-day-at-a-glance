@@ -1,59 +1,60 @@
 $(document).ready(function(){
   $(".time-display").text(moment().format("MMMM Do YYYY, h:mm:ss a"));//displays time in header element
+  $(moment().startOf('day').hour(1).minutes(0).seconds(0).milliseconds(0)).select("id");
   $(".save-button").on("click", function (){
-      console.log(this);
       var text = $(this).siblings(".user-input").val();//writes text to 
-      var time = $(this).parent().attr("id");
+      var time = $(this).parent().attr("id");//selects property id-the timeblocks-to adds the function of time to the textarea
+      console.log(this);
       localStorage.setItem(time, text);//sets the text and time to local storage value
   });
-// each hour text field
-$("#eight .user-input").val(localStorage.getItem("eight"));
+// each hour text field for user input
+$("#8 .user-input").val(localStorage.getItem("8"));
 
-$("#nine .user-input").val(localStorage.getItem("nine"));
+$("#9 .user-input").val(localStorage.getItem("9"));
 
-$("#ten .user-input").val(localStorage.getItem("ten"));
+$("#10 .user-input").val(localStorage.getItem("10"));
 
-$("#eleven .user-input").val(localStorage.getItem("eleven"));
+$("#11 .user-input").val(localStorage.getItem("11"));
 
-$("#twelve .user-input").val(localStorage.getItem("twelve"));
+$("#12 .user-input").val(localStorage.getItem("12"));
 
-$("#one .user-input").val(localStorage.getItem("one"));
+$("#13 .user-input").val(localStorage.getItem("13"));
 
-$("#two .user-input").val(localStorage.getItem("two"));
+$("#14 .user-input").val(localStorage.getItem("14"));
 
-$("#three .user-input").val(localStorage.getItem("three"));
+$("#15 .user-input").val(localStorage.getItem("15"));
 
-$("#four .user-input").val(localStorage.getItem("four"));
+$("#16 .user-input").val(localStorage.getItem("16"));
 
-$("#five .user-input").val(localStorage.getItem("five"));
+$("#17 .user-input").val(localStorage.getItem("17"));
 
 function eachHour(){//sets moment so that hours are the increment. 
-  var currentHour = moment().hour();
 
-  $(".time-line").each(function(){// parseInt to attribute
-      var hourLine = parseInt($(this).attr("id").split("hour")[1]);
-      console.log(hourLine, currentHour)
-
+  $(".time-line").each(function(){
+    var currentHour = moment().hour();
+      var hourLine = parseInt($(this).attr("id"));//pase
+      console.log(hourLine)
       if(hourLine < currentHour){
           $(this).addClass("past");
-          $(this).removeClass("future");
-          $(this).removeClass("present");
+          $(this).removeClass("soon");
+          $(this).removeClass("now");
       }//if else to handle adding classes for css event
       else if(hourLine === currentHour) {
           $(this).removeClass("past");
-          $(this).addClass("present");
-          $(this).removeClass("future");
+          $(this).addClass("now");
+          $(this).removeClass("soon");
       }
       else {
-          $(this).removeClass("present");
+          $(this).removeClass("now");
           $(this).removeClass("past");
-          $(this).addClass("future");
+          $(this).addClass("soon");
           console.log(this)
       }
+      console.log(currentHour)
   })
 }
       eachHour();
-      
+     
 
 })
 

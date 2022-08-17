@@ -58,12 +58,12 @@ textarea{
   color: #2d290b;
 }
 
-.present {
+.now {
   background-color: rgb(177, 124, 237);
   color: #2d290b;
 }
 
-.future {
+.soon {
   background-color: #6cbdc8;
   color: #2d290b;
 }
