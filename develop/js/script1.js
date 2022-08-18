@@ -2,7 +2,7 @@ $(document).ready(function(){
   $(".time-display").text(moment().format("MMMM Do YYYY, h:mm:ss a"));//displays time in header element
   $(moment().startOf('day').hour(1).minutes(0).seconds(0).milliseconds(0)).select("id");
   $(".save-button").on("click", function (){
-      var text = $(this).siblings(".user-input").val();//writes text to 
+      var text = $(this).siblings(".user-input").val();//writes text to the textarea element by class
       var time = $(this).parent().attr("id");//selects property id-the timeblocks-to adds the function of time to the textarea
       console.log(this);
       localStorage.setItem(time, text);//sets the text and time to local storage value

@@ -63,7 +63,7 @@ textarea{
   color: #2d290b;
 }
 
-.soon {
+.soon {/* changed the classes of future and present once I realized the css was here*/
   background-color: #6cbdc8;
   color: #2d290b;
 }
@@ -82,7 +82,7 @@ textarea{
   color: #123c5c;
 }
 
-footer {
+footer {/*added a footer*/
   background-color: #123c5c;
   color: #ede7b6;
   font-size: 60px;

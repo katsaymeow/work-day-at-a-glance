@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" /><!--these came with the starter code, but when I checked the links out, I found a new button to use for style-->
+
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./develop/css/style.css" />
   <title>Work DaYea</title>
 </head>
@@ -21,14 +24,14 @@
   </header>
   <!--Here are the TimeBlocks-->
   <div class="container">
- <!--needed id for JQ time. Kept it to an id-->
+ <!--needed id for JQ time. Kept it to an id. Had to convert all id to numbers that correleate to the 24 clock to add the moment-->
     <div id="8" class="row time-line">
       <div class="col-md-1 hour">
         8
       </div>
       <textarea class="col-md-10 user-input">
   </textarea>
-      <button class="btn save-button col-md-1"><i class="fas fa-dna"></i></button>
+      <button class="save-button col-md-1"><i class="fas fa-dna"></i></button>
     </div>
 
     <div id="9" class="row time-line">
@@ -37,7 +40,7 @@
       </div>
       <textarea class="col-md-10 user-input">
   </textarea>
-      <button class="btn save-button col-md-1"><i class="fas fa-dna"></i></button>
+      <button class="save-button col-md-1"><i class="fas fa-dna"></i></button>
     </div>
 
     <div id="10" class="row time-line">
@@ -46,7 +49,7 @@
       </div>
       <textarea class="col-md-10 user-input">
   </textarea>
-      <button class="btn save-button col-md-1"><i class="fas fa-dna"></i></button>
+      <button class="save-button col-md-1"><i class="fas fa-dna"></i></button>
     </div>
 
     <div id="11" class="row time-line">
@@ -55,7 +58,7 @@
       </div>
       <textarea class="col-md-10 user-input">
   </textarea>
-      <button class="btn save-button col-md-1"><i class="fas fa-dna"></i></button>
+      <button class="save-button col-md-1"><i class="fas fa-dna"></i></button>
     </div>
 
     <div id="12" class="row flex-row time-line">
@@ -64,7 +67,7 @@
       </div>
       <textarea class="col-md-10 user-input">
   </textarea>
-      <button class="btn save-button col-md-1"><i class="fas fa-dna"></i></button>
+      <button class="save-button col-md-1"><i class="fas fa-dna"></i></button>
     </div>
 
     <div id="13" class="row time-line">
@@ -73,7 +76,7 @@
       </div>
       <textarea class="col-md-10 user-input">
   </textarea>
-      <button class="btn save-button col-md-1"><i class="fas fa-dna"></i></button>
+      <button class="save-button col-md-1"><i class="fas fa-dna"></i></button>
     </div>
 
     <div id="14" class="row time-line">
@@ -82,7 +85,7 @@
       </div>
       <textarea class="col-md-10 p-10 user-input">
   </textarea>
-      <button class="btn save-button col-md-1"><i class="fas fa-dna"></i></button>
+      <button class="save-button col-md-1"><i class="fas fa-dna"></i></button>
     </div>
 
     <div id="15" class="row time-line">
@@ -91,7 +94,7 @@
       </div>
       <textarea class="col-md-10 user-input">
   </textarea>
-      <button class="btn save-button col-md-1"><i class="fas fa-dna"></i></button>
+      <button class="save-button col-md-1"><i class="fas fa-dna"></i></button>
     </div>
 
     <div id="16" class="row time-line">
@@ -100,7 +103,7 @@
       </div>
       <textarea class="col-md-10 user-input">
   </textarea>
-      <button class="btn save-button col-md-1"><i class="fas fa-dna"></i></button>
+      <button class="save-button col-md-1"><i class="fas fa-dna"></i></button>
     </div>
 
     <div id="17" class="row time-line">
@@ -109,14 +112,15 @@
       </div>
       <textarea class="col-md-10 user-input">
   </textarea>
-      <button class="btn save-button col-md-1"><i class="fas fa-dna"></i></button>
+      <button class="save-button col-md-1"><i class="fas fa-dna"></i></button>
     </div>
   </div>
 
   <footer class="footer col-sm-md-lg-12">Thanks for coming😀</footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script><!--used the google api for jquery. I could not use the jquery folder I downloaded becasue it would not load-->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" integrity="sha512-hlLgIh4nncb2yc4YPtWk5wOykcFxF0fBd5rHfJ6xsALI2khY3H8LbivswJE5Fpz7hws7CJCqOzdyjWHiKJYl+A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--this is the script insert for moment-->
   <script rel="script" src="./develop/js/script1.js"></script>
 
 </body>
