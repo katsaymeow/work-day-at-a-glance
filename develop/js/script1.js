@@ -28,12 +28,14 @@ $("#16 .user-input").val(localStorage.getItem("16"));
 
 $("#17 .user-input").val(localStorage.getItem("17"));
 
+// took out for loop function that I thought was needed to actually use the time moment(). JQuery handled it with the parseInt. 
+
 function eachHour(){//sets moment so that hours are the increment. 
 
   $(".time-line").each(function(){
     var currentHour = moment().hour();
-      var hourLine = parseInt($(this).attr("id"));//pase
-      console.log(hourLine)
+      var hourLine = parseInt($(this).attr("id"));//parseInt was a new concept for me
+      console.log(hourLine) // thanks to my tutor, he helped me figure out the logic to help this function. 
       if(hourLine < currentHour){
           $(this).addClass("past");
           $(this).removeClass("soon");
@@ -55,6 +57,5 @@ function eachHour(){//sets moment so that hours are the increment.
 }
       eachHour();
      
-
 })
 

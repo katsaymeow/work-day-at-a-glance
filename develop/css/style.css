@@ -7,7 +7,6 @@ body {
 
 textarea{
   background: transparent;
-  border: solid #b4eeed;
   resize: none;
   color:#043051;
   border-left: 1px solid #043051;
@@ -27,7 +26,7 @@ textarea{
   border-radius: 15px;
 }
 .user-input{
-  white-space: pre-wrap;/*???*/
+  white-space: pre-wrap;/*https://developer.mozilla.org/en-US/docs/Web/CSS/white-space  wraps around the text content evenly*/
 }
 
 .time-line{
@@ -59,7 +58,7 @@ textarea{
 }
 
 .now {
-  background-color: rgb(177, 124, 237);
+  background-color: #b17ced;
   color: #2d290b;
 }
 

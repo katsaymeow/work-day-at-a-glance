@@ -11,7 +11,7 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" /><!--these came with the starter code, but when I checked the links out, I found a new button to use for style-->
 
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,500&display=swap" rel="stylesheet">
-
+<!--added my own font api-->
   <link rel="stylesheet" href="./develop/css/style.css" />
   <title>Work DaYea</title>
 </head>
@@ -22,8 +22,8 @@
     <p class="lead"></p>
     <p id="currentDay" class="time-display"></p>
   </header>
-  <!--Here are the TimeBlocks-->
-  <div class="container">
+  <!--Here are the TimeBlocks  used the container to add the accesibltiy UI with Bootstrap-->
+  <div class="container display-xs-sm-md-lg-12">
  <!--needed id for JQ time. Kept it to an id. Had to convert all id to numbers that correleate to the 24 clock to add the moment-->
     <div id="8" class="row time-line">
       <div class="col-md-1 hour">
@@ -117,7 +117,7 @@
   </div>
 
   <footer class="footer col-sm-md-lg-12">Thanks for coming😀</footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script><!--used the google api for jquery. I could not use the jquery folder I downloaded becasue it would not load-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script><!--used the google api for jquery. I could not use the jquery folder I downloaded becasue it would not load. I replaced the orginal and got lost with it not working. Tried the script tag my instructor provided also without luck. I think I was on the wrong version to begin with, but I am still unsure of the HOW I think. Although I think I has to do with the cheatsheet I was using instead of JQuery documentation. I understand the concept of API but not the application, I think.-->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" integrity="sha512-hlLgIh4nncb2yc4YPtWk5wOykcFxF0fBd5rHfJ6xsALI2khY3H8LbivswJE5Fpz7hws7CJCqOzdyjWHiKJYl+A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!--this is the script insert for moment-->
